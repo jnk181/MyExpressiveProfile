@@ -380,6 +380,7 @@ p span.highlight {
     height:calc(100% - 220px);
     padding-left:5px;
     padding-right: 5px;
+    overflow-y: auto;
 }
 
 .main-widget.music-player .music-player-main .playlist-view .playlist-list .list-item:first-child {

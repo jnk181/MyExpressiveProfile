@@ -54,6 +54,14 @@ var music_list=[
         album: "BLITZ",
         artist: "KMFDM",
         date: "2009"
+    },
+    {
+        src: "./media/music/Imogen Heap - Daylight Robbery.mp3",
+        synced_lyrics:"",
+        title: "Daylight Robbery",
+        album: "Speak For Yourself",
+        artist: "Imogen Heap",
+        date: "2005"
     }
 
 ]
