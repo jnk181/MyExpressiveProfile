@@ -102,6 +102,14 @@ var photo_albums=[
     },
 ]
 
+var notes=[
+    {
+        title:"Title",
+        content:"<h1>Test</h1>",
+        date:"2025-10-02",
+    }
+]
+
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(`span.profilename`).innerHTML=config.name;
     document.querySelector(`span.profilestatus`).innerHTML=config.status;
@@ -138,6 +146,13 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function() {
             if(!this.parentElement.classList.contains("open")) this.parentElement.classList.add("open");
             else {this.parentElement.classList.remove("open")}
+        })
+    })
+
+    document.querySelectorAll(`.note-item`).forEach(item => {
+        item.addEventListener('click', function() {
+            document.querySelector(`.overlay-black`).style.display="";
+            document.querySelector(`.overlay-black .note-preview`).style.display="";
         })
     })
 });

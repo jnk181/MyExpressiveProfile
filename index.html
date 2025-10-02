@@ -49,6 +49,18 @@
         <script src="main.js"></script>
     </head>
     <body>
+        <div class="overlay-black" style="display:none;">
+            <div class="preview-widget note-preview">
+                <div class="header">
+                    <img src="./img/icons/notes.png">
+                    <span>Title</span>
+                    <button class="close-button" onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .note-preview`).style.display='none'"></button>
+                </div>
+                <div class="inner-content">
+                    <h1>Test</h1>
+                </div>
+            </div>
+        </div>
         <div class="main-widget profile-header">
             
             <div class="avatar-cont">
@@ -67,7 +79,7 @@
             <button class="tabber" data-tabname="tab-photos">
                 <div><img src="./img/icons/photos.png"><span>Photos</span></div>
             </button>
-            <button class="tabber" data-tabname="tab-friends">
+            <button class="tabber" data-tabname="tab-friends" style="display:none;">
                 <div><img src="./img/icons/friends.png"><span>Friends</span></div>
             </button>
             <button class="tabber" data-tabname="tab-notes">

@@ -13,7 +13,15 @@ var music_list=[
         title: "Abracadabra",
         album: "MAYHEM",
         artist: "Lady Gaga",
-        date: "2024-02-03"
+        date: "2025-02-03"
+    },
+    {
+        src: "./media/music/House of Protection - Pulling Teeth.mp3",
+        synced_lyrics:"",
+        title: "Pulling Teeth",
+        album: "GALORE",
+        artist: "House of Protection",
+        date: "2024"
     },
     {
         src: "./media/music/molg - blbt nin remix.mp3",
@@ -40,6 +48,14 @@ var music_list=[
         date: "2014"
     },
     {
+        src: "./media/music/Wulfband - Heiss Wie Die Holle.mp3",
+        synced_lyrics:"",
+        title: "Heiss Wie Die Holle",
+        album: "Heiss Wie Die Holle",
+        artist: "Wulfband",
+        date: "2023"
+    },
+    {
         src: "./media/music/Nine Inch Nails - Wish.mp3",
         synced_lyrics:"",
         title: "Wish",
@@ -62,6 +78,14 @@ var music_list=[
         album: "BLITZ",
         artist: "KMFDM",
         date: "2009"
+    },
+    {
+        src: "./media/music/KMFDM - Ready To Blow.mp3",
+        synced_lyrics:"",
+        title: "Ready To Blow",
+        album: "Hau Ruck",
+        artist: "KMFDM",
+        date: "2005"
     },
     {
         src: "./media/music/Imogen Heap - Daylight Robbery.mp3",
