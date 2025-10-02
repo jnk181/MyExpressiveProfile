@@ -113,6 +113,7 @@ var notes=[
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector(`span.profilename`).innerHTML=config.name;
     document.querySelector(`span.profilestatus`).innerHTML=config.status;
+    document.querySelector(`title`).innerHTML=`${config.name} - MyExpressiveProfile`;
 
     document.querySelectorAll(`button.tabber`).forEach(button => {
         button.addEventListener('click', function() {
