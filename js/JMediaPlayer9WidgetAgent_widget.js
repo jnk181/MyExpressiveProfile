@@ -16,12 +16,20 @@ var music_list=[
         date: "2024-02-03"
     },
     {
-        src: "./media/music/bolg - blbt nin remix.mp3",
+        src: "./media/music/molg - blbt nin remix.mp3",
         synced_lyrics:"",
         title: "Burn Like Brilliant Trash",
         album: "Machines of Loving Grace",
         artist: "Machines of Loving Grace",
         date: "1991"
+    },
+    {
+        src: "./media/music/molg - Butterfly Wings.mp3",
+        synced_lyrics:"",
+        title: "Butterfly Wings",
+        album: "Concentration",
+        artist: "Machines of Loving Grace",
+        date: "1993"
     },
     {
         src: "./media/music/Wulfband - Chaostanzen.mp3",
@@ -62,6 +70,22 @@ var music_list=[
         album: "Speak For Yourself",
         artist: "Imogen Heap",
         date: "2005"
+    },
+    {
+        src: "./media/music/Chemlab - Codeine, Glue, And You.mp3",
+        synced_lyrics:"",
+        title: "Codeine, Glue, And You",
+        album: "Burn Out At The Hydrogen Bar",
+        artist: "Chemlab",
+        date: "1993"
+    },
+    {
+        src: "./media/music/Kesha - Blow (Deconstructed).mp3",
+        synced_lyrics:"",
+        title: "Blow (Deconstructed)",
+        album: "Deconstructed - EP",
+        artist: "Kesha",
+        date: "2012"
     }
 
 ]

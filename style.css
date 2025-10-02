@@ -63,7 +63,7 @@ p span.highlight {
     padding:15px;
 }
 
-.main-widget.with-header .header {
+.main-widget.with-header > .header {
     height:25px;
     width:100%;
     display:flex;
@@ -213,6 +213,110 @@ p span.highlight {
     text-align: center;
     display: inline-block;
     color:#bebebe;
+}
+
+.profile-photos .photos-album {
+    border: 1px solid gray;
+    border-radius:4px;
+    height:45px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.profile-photos .photos-album:last-child {
+    margin-bottom:0;
+}
+
+.profile-photos .photos-album.open {
+    height:auto;
+}
+
+.profile-photos .photos-album .header {
+    background:linear-gradient(#5e5e5e,#2e2e2e);
+    border-bottom: 1px solid gray;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    height:45px;
+    cursor:pointer;
+}
+
+.profile-photos .photos-album .album-content {
+    background:black;
+}
+
+.profile-photos .photos-album .album-content .photo {
+    display:inline-block;
+}
+
+.profile-photos .photos-album .album-content .photo span.caption {
+    width:100%;
+    height:30px;
+    display:inline-block;
+    text-align: center;    
+}
+
+.profile-photos .photos-album .album-content .photo .photo-main-cont {
+    background:black;
+    width:150px;
+    height:150px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+}
+
+.profile-photos .photos-album .album-content .photo img.photo-main {
+    max-width:100%;
+    max-height:100%;
+    border:6px solid white;
+    box-sizing: border-box;
+    transition: transform ease-in-out 0.45s;
+}
+
+.profile-photos .photos-album .album-content .photo img.photo-main:hover {
+    transform: scale(1.15);
+}
+
+.profile-photos .photos-album .header img.icon {
+    height:35px;
+    margin-right:10px;
+    filter:drop-shadow(2px 3px 15px black);
+}
+
+.main-widget.with-header.profile-notes > .header {
+    background:linear-gradient(#836654 0%,#4a3a30 28%,#301f0c 100%);
+    border-bottom: 1px solid #957c61;
+}
+
+.main-widget.with-header.profile-notes {
+    border-color:#957c61;
+}
+
+.profile-notes .inner-content {
+    background:url(./img/corkboard.jpg);
+}
+
+.main-widget.with-header.profile-notes .note-item {
+    background:#ffe07c;
+    border:1px solid darkgoldenrod;
+    color:black;
+    border-radius:5px;
+    width:150px;
+    height:150px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.main-widget.with-header.profile-notes .note-item h1 {
+    font-size:18px;
+}
+
+.main-widget.with-header.profile-notes .note-item h1:first-child {
+    margin:3px;
+}
+
+.main-widget.with-header.profile-notes .note-item p:first-of-type {
+    margin:3px;
 }
 
 .main-widget.music-player .header {

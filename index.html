@@ -52,7 +52,7 @@
         <div class="main-widget profile-header">
             
             <div class="avatar-cont">
-                <img class="avatar-overlay" src="./img/avatar_overlays/autumn.gif">
+                <img class="avatar-overlay" src="./img/avatar_overlays/smoke.gif" style="opacity:0.7">
                 <img class="avatar-main" src="./img/avatar.jpg">
             </div>
             <div class="text-area">
@@ -70,6 +70,9 @@
             <button class="tabber" data-tabname="tab-friends">
                 <div><img src="./img/icons/friends.png"><span>Friends</span></div>
             </button>
+            <button class="tabber" data-tabname="tab-notes">
+                <div><img src="./img/icons/notes.png"><span>Notes</span></div>
+            </button>
             <button class="tabber" data-tabname="tab-musicplayer">
                 <div><img src="./img/icons/musicplayer.png"><span>Music Player</span></div>
             </button>
@@ -83,7 +86,8 @@
                     <span>Info</span>
                 </div>
                 <div class="inner-content">
-                    <p>Hi! My name is <span class="highlight">jnk181</span>.</p>
+                    <p>Hi! My name is <span class="highlight">Janko</span>.</p>
+                    <p>I'm still sleeping and dreaming about things 😴. <br>When I wake up, I'll write some more.</p>
                 </div>
             </div>
 
@@ -142,8 +146,44 @@
 
         </div>
 
-        <div class="tab-container tab-photos"></div>
-        <div class="tab-container tab-friends"></div>
+        <div class="tab-container tab-photos" style="display:none;">
+            <div class="main-widget with-header profile-photos">
+                <div class="header">
+                    <img src="./img/icons/photos.png">
+                    <span>Photos</span>
+                </div>
+                <div class="inner-content">
+                    <div class="photos-album template">
+                        <div class="header">
+                            <img class="icon" src="./img/icons/mypictures.png">
+                            <span class="title">Album</span>
+                        </div>
+                        <div class="album-content">
+                            <div class="photo template">
+                                <div class="photo-main-cont"><img class="photo-main" src="./img/genericimage.jpg"></div>
+                                <br>
+                                <span class="caption">Caption</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-container tab-friends" style="display:none;"></div>
+        <div class="tab-container tab-notes" style="display:none;">
+            <div class="main-widget with-header profile-notes">
+                <div class="header">
+                    <img src="./img/icons/notes.png">
+                    <span>Notes</span>
+                </div>
+                <div class="inner-content">
+                    <div class="note-item">
+                        <h1>Title</h1>
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="tab-container tab-musicplayer" style="display:none;">
             <div class="main-widget with-header music-player" id="mediaplayerwidget" data-playstate="paused">
