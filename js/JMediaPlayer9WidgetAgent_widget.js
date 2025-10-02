@@ -127,11 +127,18 @@ class JMediaPlayer9WidgetAgent {
             this.next();
         })
 
+        document.querySelector(`#${this.player_id} .button-stop`).addEventListener('click', () => {
+            this.stop();
+        })
+
         this.audio_elem.addEventListener('ended', () => {
             this.resetseekbar();
             document.querySelector(`#${this.player_id}`).dataset.playstate="paused";
-            if(this.selected_index<this.playlist.length) {
+            if(this.selected_index<this.playlist.length-1) {
                 this.playatindex(parseInt(this.selected_index)+1);
+            } else {
+                this.stop();
+                console.log("stop")
             }
         })
 
@@ -182,6 +189,7 @@ class JMediaPlayer9WidgetAgent {
     play = () => {
         if(this.selected_index==null) {this.playatindex(0); return;}
         this.audio_elem.play();
+        document.querySelector(`#${this.player_id} .button-stop`).disabled=false;
         document.querySelector(`#${this.player_id}`).dataset.playstate="playing";
         this.set_progresscontroller();
 
@@ -189,6 +197,10 @@ class JMediaPlayer9WidgetAgent {
         document.querySelector(`#${this.player_id} .text span.album`).innerHTML=this.playlist[this.selected_index].album;
         document.querySelector(`#${this.player_id} .text span.artist`).innerHTML=this.playlist[this.selected_index].artist;
         document.querySelector(`#${this.player_id} .text span.date`).innerHTML=this.playlist[this.selected_index].date;
+
+        document.querySelector(`#${this.player_id}`).dataset.title=this.playlist[this.selected_index].title;
+        document.querySelector(`#${this.player_id}`).dataset.album=this.playlist[this.selected_index].album;
+        document.querySelector(`#${this.player_id}`).dataset.artist=this.playlist[this.selected_index].artist;
 
         document.querySelector(`#${this.player_id} .song-info img.cover`).src=this.playlist[this.selected_index].src.slice(0,-4)+"_cover.jpg";
         document.querySelector(`#${this.player_id} .song-info img.disc`).src=this.playlist[this.selected_index].src.slice(0,-4)+"_disc.png";
@@ -233,5 +245,26 @@ class JMediaPlayer9WidgetAgent {
         if(this.selected_index>0) {
             this.playatindex(parseInt(this.selected_index)-1);
         }
+    }
+
+    stop = () => {
+        this.pause_progresscontroller();
+        this.resetseekbar();
+        this.audio_elem.pause();
+        this.audio_elem.currentTime=0;
+        document.querySelector(`#${this.player_id}`).dataset.playstate="paused";
+        document.querySelector(`#${this.player_id} .button-stop`).disabled=true;
+        document.querySelector(`#${this.player_id} .song-info img.cover`).src="./img/widgets/mediaplayer/genericcover.jpg";
+        document.querySelector(`#${this.player_id} .song-info img.disc`).src="./img/widgets/mediaplayer/genericdisc.png"
+        document.querySelector(':root').style.setProperty('--music-player-bk', "url(\"./img/widgets/mediaplayer/backgrounddefault.jpg\")");
+
+        document.querySelector(`#${this.player_id} .text span.title`).innerHTML="Title";
+        document.querySelector(`#${this.player_id} .text span.album`).innerHTML="Album";
+        document.querySelector(`#${this.player_id} .text span.artist`).innerHTML="Artist";
+        document.querySelector(`#${this.player_id} .text span.date`).innerHTML="Date";
+
+        document.querySelector(`#${this.player_id}`).dataset.title="";
+        document.querySelector(`#${this.player_id}`).dataset.album="";
+        document.querySelector(`#${this.player_id}`).dataset.artist="";
     }
 }

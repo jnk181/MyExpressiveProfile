@@ -1,3 +1,5 @@
+@import url("./css/music_player_logos.css");
+
 :root {
     --music-player-bk: url("./img/widgets/mediaplayer/backgrounddefault.jpg");
 }
@@ -116,13 +118,12 @@ p span.highlight {
 }
 
 .profile-header .text-area .profilename {
-    font-size:27px;
+    font-size:30px;
     font-weight: bold;
 }
 
 .profile-header .text-area .profilestatus {
     color:#b3b3b3;
-    font-style: italic;
 }
 
 .profile-tabber {
@@ -309,6 +310,8 @@ p span.highlight {
 
 .main-widget.with-header.profile-notes .note-item h1 {
     font-size:18px;
+    height:42px;
+    overflow:hidden;
 }
 
 .main-widget.with-header.profile-notes .note-item h1:first-child {

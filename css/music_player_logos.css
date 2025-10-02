@@ -1,0 +1,9 @@
+.main-widget.music-player[data-album="MAYHEM"][data-artist="Lady Gaga"] span.album {
+    content:url("../media/music_assets/ladygaga_mayhem1.png");
+    height:19px;
+}
+
+.main-widget.music-player[data-album="MAYHEM"][data-artist="Lady Gaga"] span.artist {
+    content:url("../media/music_assets/ladygaga_mayhem2.png");
+    height:19px;
+}
