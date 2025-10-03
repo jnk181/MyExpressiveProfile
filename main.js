@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "jnk181",
-    status: "11:59 🌕"
+    status: "😴"
 }
 
 var photo_albums=[
