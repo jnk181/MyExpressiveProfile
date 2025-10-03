@@ -55,14 +55,29 @@
     </head>
     <body>
         <div class="overlay-black" style="display:none;">
-            <div class="preview-widget note-preview">
+            <div class="preview-widget note-preview" style="display:none;">
                 <div class="header">
                     <img src="./img/icons/notes.png">
-                    <span>Title</span>
+                    <span class="title">Title</span>
                     <button class="close-button" onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .note-preview`).style.display='none'"></button>
                 </div>
                 <div class="inner-content">
-                    <h1>Test</h1>
+                    <span class="date">0000-00-00</span>
+                    <h1 class="title">Test</h1>
+                    <div class="markdown-content">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-widget image-preview" style="display:none;">
+                <div class="header">
+                    <img src="./img/icons/photos.png">
+                    <span class="title">Photo viewer</span>
+                    <button class="close-button" onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .image-preview`).style.display='none'"></button>
+                </div>
+                <div class="inner-content">
+                    <img class="main" src="./img/genericimage.jpg">
                 </div>
             </div>
         </div>
@@ -191,12 +206,14 @@
             <div class="main-widget with-header profile-notes">
                 <div class="header">
                     <img src="./img/icons/notes.png">
-                    <span>Notes</span>
+                    <span class="title">Notes</span>
                 </div>
                 <div class="inner-content">
-                    <div class="note-item">
-                        <h1>Title</h1>
-                        <p>Content</p>
+                    <div class="note-item template">
+                        <h1 class="title">Title</h1>
+                        <img class="thumb" style="display:none;" src="./img/genericimage.jpg">
+                        <p class="short-description" style="display:none;">Test</p>
+                        <div class="date-header"><span>2025-10-03</span></div>
                     </div>
                 </div>
             </div>
