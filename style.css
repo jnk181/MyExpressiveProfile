@@ -194,6 +194,7 @@ p span.highlight {
     margin-right: 10px;
     margin-bottom: 10px;
     float:left;
+    overflow:hidden;
 }
 
 .profile-links .link-cont .icon-cont {
@@ -208,7 +209,8 @@ p span.highlight {
 }
 
 .profile-links .link-cont img.icon {
-    width:calc(100% - 6px);
+    width:54px;
+    height:54px;
     margin:3px;
 }
 
