@@ -4,10 +4,18 @@
     --music-player-bk: url("./img/widgets/mediaplayer/backgrounddefault.jpg");
 }
 
+@font-face {
+    font-family: 'AppleColorEmoji';
+    /* Using the raw GitHub link you provided */
+    src: url('https://github.com/zhdsmy/apple-emoji/raw/refs/heads/ios-18.4/fonts/AppleColorEmoji.ttf') format('truetype');
+    /* This ensures the font only downloads when emojis are present */
+    unicode-range: U+1F000-1Faff, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF, U+2700-27BF;
+}
+
 body {
     background:black;
     background:url(./img/background.jpg), black;
-    background-size:100% auto;
+    background-size:cover;
     background-position: top;
     background-repeat: no-repeat;
     color:white;
@@ -15,8 +23,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family:"Verdana";
+    font-family: "AppleColorEmoji", "Noto Sans", sans-serif;
     margin:0;
+}
+
+.nts-hide {
+    display:none;
 }
 
 .overlay-black {
@@ -47,7 +59,7 @@ a {
 
 p span.highlight {
     font-weight: bold;
-    color:rgb(255, 188, 180);
+    color:rgb(204, 255, 180);
 }
 
 .tab-container {
@@ -58,13 +70,16 @@ p span.highlight {
 .main-widget {
     max-width:900px;
     width:calc(100% - 30px);
-    background:linear-gradient(#383838,#1a1a1a);
-    padding:15px;
-    border-radius:5px;
+    padding:10px;
     border:1px solid #8a8a8a;
     box-sizing: border-box;
     margin-bottom:15px;
     overflow:auto;
+    border: 5px solid transparent;
+    border-image: url("./img/design/panel-bk.svg") 5 fill stretch;
+    border-image-outset: 0;
+    border-radius:5px;
+    backdrop-filter: blur(5px);
 }
 
 .main-widget.with-header {
@@ -83,7 +98,8 @@ p span.highlight {
     width:100%;
     display:flex;
     align-items: center;
-    background:linear-gradient(#7a7a7a,#1b1b1b);
+    background:url(./img/design/header-bk.svg);
+    background-size:contain;
     border-bottom: 1px solid #5e5e5e;
     box-sizing: border-box;
     font-size:14px;
@@ -109,6 +125,8 @@ p span.highlight {
     float:left;
     overflow:hidden;
     position:relative;
+    border:8px solid transparent;
+    border-image:url(./img/design/pfp-border.png) 7 fill stretch;
 }
 
 .profile-header .avatar-cont .avatar-overlay {
@@ -146,25 +164,28 @@ p span.highlight {
 }
 
 .profile-tabber button.tabber {
+    appearance: none;
+    background: transparent;
+    border: 5px solid; 
+    border-image: url('./img/design/button0.svg') 5 fill stretch;
     height:100%;
     min-width:100px;
-    font-family:"Verdana";
-    border:1px solid gray;
-    border-radius:5px;
-    background:linear-gradient(#969696 0%, #3a3a3a 49%,#252525 50%,black 100%);
+    font-family:"Noto Sans";
     color:white;
+    transition: all 0.2s ease;
+    font-size:14px;
 }
 
 .profile-tabber button.tabber:hover {
-    background:linear-gradient(#ffffff75,#57575775),linear-gradient(#494949 0%, #2c2c2c 49%,black 50%,black 100%);
+    border-image: url('./img/design/button0_hover.svg') 5 fill stretch;
 }
 
 .profile-tabber button.tabber:active {
-    filter:brightness(0.7);
+    border-image: url('./img/design/button0_pressed.svg') 5 fill stretch;
 }
 
 .profile-tabber button.tabber:disabled {
-    opacity:0.5;
+    border-image: url('./img/design/button0_pressed.svg') 5 fill stretch;
     pointer-events: none;
 }
 
@@ -177,7 +198,7 @@ p span.highlight {
 }
 
 .profile-tabber button.tabber img {
-    height:85%;
+    height:110%;
     margin-right:7px;
 }
 
@@ -254,13 +275,15 @@ p span.highlight {
 }
 
 .profile-photos .photos-album .header {
-    background:linear-gradient(#5e5e5e,#2e2e2e);
+    background:url(./img/design/header-bk.svg);
+    background-size:contain;
     border-bottom: 1px solid gray;
     display:flex;
     align-items: center;
     flex-direction: row;
     height:45px;
     cursor:pointer;
+    border
 }
 
 .profile-photos .photos-album .album-content {

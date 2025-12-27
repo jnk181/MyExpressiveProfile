@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "jnk181",
-    status: "😴"
+    status: "Just wasting it..."
 }
 
 var photo_albums=[
@@ -147,6 +147,19 @@ function previewImage(image) {
     document.querySelector(`.overlay-black`).style.display="";
     document.querySelector(`.overlay-black .image-preview`).style.display="";
     document.querySelector(`.overlay-black .image-preview .inner-content img.main`).src=image;
+}
+
+function showHiddenLinks() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .nts-hide {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+    `;
+    document.head.appendChild(style);
+    console.log("NTS elements are now visible.");
 }
 
 document.addEventListener('DOMContentLoaded', function() {
