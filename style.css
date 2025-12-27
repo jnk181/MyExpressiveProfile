@@ -15,7 +15,7 @@
 body {
     background:black;
     background:url(./img/background.jpg), black;
-    background-size:cover;
+    background-size:100% auto;
     background-position: top;
     background-repeat: no-repeat;
     color:white;
