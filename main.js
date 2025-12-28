@@ -7,6 +7,27 @@ var config={
 
 var photo_albums=[
     {
+        name:"Some stuff I made",
+        icon:"./img/icons/shapes.png",
+        photos:[
+            {
+                src:"./media/photos_other/Screenshot from 2025-12-28 08-16-13.webp",
+                caption:"Zinwa Q25 launcher concept",
+                date:"2025-03-20",
+            },
+            {
+                src:"./media/photos_other/nimbusstrata.webp",
+                caption:"Linux Mint Nimbus Strata concept",
+                date:"2025-03-20",
+            },
+            {
+                src:"./media/photos_other/sew660ir_front_red.webp",
+                caption:"Sony Ericsson W660",
+                date:"2025-03-20",
+            }
+        ]
+    },
+    {
         name:"Cats",
         icon:"./img/icons/cat_cookie.png",
         photos:[
