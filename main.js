@@ -168,6 +168,13 @@ var notes=[
         thumbnail:"",
         short_description: "I like coffee",
         date:"2025-10-02",
+    },
+    {
+        title:"New site design",
+        content:"I decided to come up with my own new design language based on Frutiger Aero aesthetics of Windows Vista called 'Nimbus Strata'. It's based on 2009 SolarisOS' visual style called 'Nimbus' created by Erwann Chenede.",
+        thumbnail:"",
+        short_description: "I like coffee",
+        date:"2025-12-29",
     }
 ]
 
