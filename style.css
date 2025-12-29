@@ -25,6 +25,7 @@ body {
     align-items: center;
     font-family: "AppleColorEmoji", "Noto Sans", sans-serif;
     margin:0;
+    overflow-y:scroll;
 }
 
 .nts-hide {
@@ -71,11 +72,10 @@ p span.highlight {
     max-width:900px;
     width:calc(100% - 30px);
     padding:10px;
-    border:1px solid #8a8a8a;
     box-sizing: border-box;
     margin-bottom:15px;
     overflow:auto;
-    border: 5px solid transparent;
+    border: 2px solid transparent;
     border-image: url("./img/design/panel-bk.svg") 5 fill stretch;
     border-image-outset: 0;
     border-radius:5px;
@@ -283,11 +283,10 @@ p span.highlight {
     flex-direction: row;
     height:45px;
     cursor:pointer;
-    border
 }
 
 .profile-photos .photos-album .album-content {
-    background:black;
+    background:#222222;
 }
 
 .profile-photos .photos-album .album-content .photo {
@@ -298,13 +297,13 @@ p span.highlight {
 
 .profile-photos .photos-album .album-content .photo span.caption {
     width:100%;
-    height:30px;
+    height:50px;
     display:inline-block;
-    text-align: center;    
+    text-align: center;  
+    overflow:hidden;  
 }
 
 .profile-photos .photos-album .album-content .photo .photo-main-cont {
-    background:black;
     width:150px;
     height:150px;
     display:inline-flex;
@@ -317,9 +316,12 @@ p span.highlight {
     max-width:100%;
     max-height:100%;
     border:8px solid transparent;
-    border-image:url(./img/design/photobk.svg) 5 fill stretch;
     box-sizing: border-box;
     transition: transform ease-in-out 0.45s;
+    box-sizing: border-box;
+    border: 7px solid transparent;
+    box-shadow: 3px 3px 5px #0000005e;
+    border-image: url(./img/design/photobk.png) 50;
 }
 
 .profile-photos .photos-album .album-content .photo img.photo-main:hover {
@@ -338,7 +340,7 @@ p span.highlight {
 }
 
 .main-widget.with-header.profile-notes {
-    border-color:#957c61;
+    border: 1px solid #997a5a;
 }
 
 .profile-notes .inner-content {
@@ -359,6 +361,8 @@ p span.highlight {
     margin-right:15px;
     margin-bottom:15px;
     overflow:hidden;
+    background:url(./img/design/note.png);
+    background-size: 22px 22px;
 }
 
 .main-widget.with-header.profile-notes .note-item h1.title {
@@ -385,16 +389,19 @@ p span.highlight {
     margin-bottom:0;
     object-fit: cover;
     box-sizing: border-box;
-    border: 2px solid #5f2a04;
-    border-radius: 5px;
+    border: 7px solid transparent;
+    box-shadow: 3px 3px 5px #0000005e;
+    border-image: url(./img/design/photobk.png) 50;
 }
 
 .main-widget.with-header.profile-notes .note-item .date-header {
-    background:#d1ad34;
     height:21px;
     font-size:14px;
     box-sizing: border-box;
     border-top:1px solid #9f7e40;
+    background: url(./img/design/note-bottom.png);
+    background-size: cover;
+    background-position: top center;
 }
 
 .main-widget.with-header.profile-notes .note-item .date-header > span {
@@ -403,12 +410,14 @@ p span.highlight {
     text-align: right;
     padding-right:5px;
     display:inline-block;
-    color:black;
+    color:#311807;
+    text-shadow: 1px 1px #ab9278;
+    font-weight: bold;
     font-size:13px;
 }
 
 .main-widget.music-player .header {
-    background:url(./img/widgets/mediaplayer/header_bk.png);
+    /*background:url(./img/widgets/mediaplayer/header_bk.png);*/
 }
 
 .main-widget.music-player .inner-content {
@@ -416,7 +425,7 @@ p span.highlight {
     position:relative;
     padding:0;
     width:100%;
-    background:#c0d3ea;
+    background:#5f6f53;
 }
 
 .main-widget.music-player audio {
@@ -525,18 +534,18 @@ p span.highlight {
 }
 
 .main-widget.music-player .music-player-main .playlist-view {
-    width:200px;
-    height:100%;
-    background:#394472;
-    float:left;
-    overflow:hidden;
-    border-left:1px solid #6071bf;
+    width: 200px;
+    height: 100%;
+    background: #132b10;
+    float: left;
+    overflow: hidden;
+    border-left: 1px solid #52814a;
     box-sizing: border-box;
 }
 
 .main-widget.music-player .music-player-main .playlist-view .playlist-header {
     width:100%;
-    background:#6071bf;
+    background:#56834d;
     height:40px;
     display:flex;
     justify-content: center;
@@ -548,7 +557,7 @@ p span.highlight {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom:1px solid #6071bf;
+    border-bottom:1px solid #4d7c43;
     box-sizing: border-box;
     box-shadow: 0px 10px 30px #00000067;
     height:170px;
@@ -624,24 +633,39 @@ p span.highlight {
     padding-left:5px;
     padding-right:5px;
     display:grid;
-    grid-template-columns: 35px calc(100% - 70px) 35px;
-    background:url(./img/widgets/mediaplayer/seekbar_bk3.png);
-    background-size:100% 13px;
+    grid-template-columns:calc(100%);
 }
 
 .main-widget.music-player .seekbar-cont .seekbar-mid {
-    background:url(./img/widgets/mediaplayer/seekbar_bk.png);
     background-size:100% 13px;
     position:relative;
 }
 
+.main-widget.music-player .seekbar-cont .seekbar-mid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    border-image: url(./img/design/seekbar-bk.svg) 0 10 fill stretch;
+    border-width: 0 10px;
+    border-style: solid;
+    
+    pointer-events: none;
+}
+
 .main-widget.music-player .seekbar-cont .seekbar-mid .progress {
-    position:absolute;
-    left:0;
-    height:100%;
-    width:0%;
-    background:url(./img/widgets/mediaplayer/progress_bk.png);
-    background-size:100% 100%;
+    position: absolute;
+    left: 0;
+    height: 9px;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 0%;
+    background: url(./img/design/seekbar-seeked.svg);
+    border-radius: 4px;
+    background-size: auto 100%;
 }
 
 .main-widget.music-player .seekbar-cont .seekbar-start {
@@ -662,6 +686,12 @@ p span.highlight {
     padding:0;
     position:absolute;
     left:0%;
+    top:-2px;
+    border:5px solid transparent;
+    border-image:url(./img/design/seek-button.svg) 5 fill stretch;
+    box-sizing: border-box;
+    width:14px;
+    height:18px;
 }
 
 .main-widget.music-player .seekbar-cont .button-trackslider:hover {
@@ -669,7 +699,7 @@ p span.highlight {
 }
 
 .main-widget.music-player .seekbar-cont .trackslider-cont {
-    width:calc(100% - 23px);
+    width:calc(100% - 9px);
     height:100%;
     position:relative;
 }
@@ -685,10 +715,10 @@ p span.highlight {
 .main-widget.music-player .controls-cont {
     height:45px;
     width:100%;
-    background:url(./img/widgets/mediaplayer/controls_bk2.png), url(./img/widgets/mediaplayer/controls_bk.png);
-    background-size:auto auto, 100% 45px;
+    background:url(./img/widgets/mediaplayer/controls_bk2.png), url(./img/widgets/mediaplayer/controls_bk.svg);
+    background-size:auto auto, auto 45px;
     background-position:0 1px,0 0;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
     display:flex;
 }
 
@@ -878,4 +908,31 @@ p span.highlight {
     img.disc {
         display:none;
     }
+}
+
+::-webkit-scrollbar {
+  background: linear-gradient(#3a3a3a, rgb(22, 22, 22), #3a3a3a);
+  border: 1px solid rgb(66, 66, 66);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.374) 45%, rgba(255, 255, 255, 0.198) 46%, transparent 47%, transparent),
+    linear-gradient(#00000099, transparent 5%, transparent 95%, #00000099),
+    repeating-linear-gradient(0deg, transparent 10px, #ffffff54 30px, #ffffff4d 40px, transparent 60px),
+    linear-gradient(#7cb56c, #17440b);
+  border-radius: 300px;
+  box-sizing: border-box;
+  border: 1px solid var(--notice-info-border-color);
+  box-shadow: 0px 0px 15px 4px black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(#ffffff65, #ffffff65),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.374) 45%, rgba(255, 255, 255, 0.198) 46%, transparent 47%, transparent),
+    linear-gradient(#00000099, transparent 5%, transparent 95%, #00000099),
+    repeating-linear-gradient(0deg, transparent 10px, #ffffff54 30px, #ffffff4d 40px, transparent 60px),
+    linear-gradient(#7cb56c, #17440b);
 }

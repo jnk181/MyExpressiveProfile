@@ -22,8 +22,24 @@ var photo_albums=[
             },
             {
                 src:"./media/photos_other/sew660ir_front_red.webp",
-                caption:"Sony Ericsson W660",
+                caption:"Sony Ericsson W660 QWERTY remaster concept",
                 date:"2025-03-20",
+            }
+        ]
+    },
+    {
+        name:"Game stuff",
+        icon:"./img/icons/games.png",
+        photos:[
+            {
+                src:"./media/photos_other/2025-12-25 17:09:47 - Garry's Mod (x64).webp",
+                caption:"Garry's Mod gm_shoretown",
+                date:"2025-12-25",
+            },
+            {
+                src:"./media/photos_other/2025-12-23 20:12:33 - Hammer++.webp",
+                caption:"Hammering myself",
+                date:"2025-12-23",
             }
         ]
     },
