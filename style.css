@@ -450,7 +450,7 @@ p span.highlight {
     float:left;
     background:linear-gradient(#000000ce,#0000002d), var(--music-player-bk);
     background-size:cover;
-    background-position: center;
+    background-position: top;
 }
 
 .main-widget.music-player .music-player-main .nowplaying-info .song-info {
@@ -574,7 +574,7 @@ p span.highlight {
     height:120px;
     margin-top:10px;
     border-radius:5px;
-    border:1px solid #5e7391;
+    border:1px solid #77915e;
 }
 
 .main-widget.music-player .music-player-main .playlist-view .playlist-list {
