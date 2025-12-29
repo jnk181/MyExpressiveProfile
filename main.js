@@ -8,7 +8,7 @@ var config={
 var photo_albums=[
     {
         name:"Some stuff I made",
-        icon:"./img/icons/shapes.png",
+        icon:"./img/icons/pallette.png",
         photos:[
             {
                 src:"./media/photos_other/Screenshot from 2025-12-28 08-16-13.webp",
@@ -61,7 +61,7 @@ var photo_albums=[
     },
     {
         name:"Nature",
-        icon:"./img/icons/tree.png",
+        icon:"./img/icons/flower.png",
         photos:[
             {
                 src:"./media/photos/nat1.jpg",
@@ -123,7 +123,7 @@ var photo_albums=[
     },
     {
         name:"Old photos",
-        icon:"./img/icons/history.png",
+        icon:"./img/icons/backup.png",
         photos:[
             {
                 src:"./media/photos/old1.jpg",
@@ -171,8 +171,8 @@ var notes=[
     },
     {
         title:"New site design",
-        content:"I decided to come up with my own new design language based on Frutiger Aero aesthetics of Windows Vista called 'Nimbus Strata'. It's based on 2009 SolarisOS' visual style called 'Nimbus' created by Erwann Chenede.",
-        thumbnail:"",
+        content:"<img width='200' src='./media/photos_other/nimbus_icons.webp'><br>I decided to come up with my own new design language based on Frutiger Aero aesthetics of Windows Vista and Erwann Chenede's Nimbus style called 'Nimbus Strata'.",
+        thumbnail:"./media/photos_other/nimbus_icons.webp",
         short_description: "I like coffee",
         date:"2025-12-29",
     }

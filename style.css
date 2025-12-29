@@ -846,7 +846,7 @@ p span.highlight {
 .preview-widget > .header .close-button {
     height:26px;
     width:26px;
-    background:url(./img/icons/close.png);
+    background:url(./img/icons/close.svg);
     background-size:100% 100%;
     margin:2px;
     float:right;
