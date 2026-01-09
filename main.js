@@ -175,6 +175,13 @@ var notes=[
         thumbnail:"./media/photos_other/nimbus_icons.webp",
         short_description: "I like coffee",
         date:"2025-12-29",
+    },
+    {
+        title:"2026",
+        content:"Wow happy new year wow what a special day wowowowow. I literally played Half-Life 2 Raising The Bar redux for New Years Eve. Oh well. Wow. I'm just hollow overall. Idk people say I can't blame all on it, but my (undiagnosed) autism has sure got me places. New year resolutions are also bullshit.",
+        thumbnail:"",
+        short_description: "Wow",
+        date:"2025-01-09",
     }
 ]
 
