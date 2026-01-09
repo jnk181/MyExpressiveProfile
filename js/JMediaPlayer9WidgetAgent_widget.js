@@ -23,6 +23,14 @@ var music_list=[
         artist: "Chemlab",
         date: "1999-01-01"
     },
+    {
+        src: "./media/music/06 - Neurozone.mp3",
+        synced_lyrics:"",
+        title: "Neurozone",
+        album: "Burn Out At The Hydrogen Bar",
+        artist: "Chemlab",
+        date: "1993-01-01"
+    },
 ]
 
 class JMediaPlayer9WidgetAgent {
