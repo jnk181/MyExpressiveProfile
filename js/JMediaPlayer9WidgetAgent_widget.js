@@ -1,117 +1,12 @@
 var music_list=[
     {
-        src: "./media/music/Lady Gaga - Disease.mp3",
+        src: "./media/music/11 - Content.mp3",
         synced_lyrics:"",
-        title: "Disease",
-        album: "MAYHEM",
-        artist: "Lady Gaga",
-        date: "2024-10-25"
-    },
-    {
-        src: "./media/music/Lady Gaga - Abracadabra.mp3",
-        synced_lyrics:"",
-        title: "Abracadabra",
-        album: "MAYHEM",
-        artist: "Lady Gaga",
-        date: "2025-02-03"
-    },
-    {
-        src: "./media/music/House of Protection - Pulling Teeth.mp3",
-        synced_lyrics:"",
-        title: "Pulling Teeth",
-        album: "GALORE",
-        artist: "House of Protection",
-        date: "2024"
-    },
-    {
-        src: "./media/music/molg - blbt nin remix.mp3",
-        synced_lyrics:"",
-        title: "Burn Like Brilliant Trash",
-        album: "Machines of Loving Grace",
-        artist: "Machines of Loving Grace",
-        date: "1991"
-    },
-    {
-        src: "./media/music/molg - Butterfly Wings.mp3",
-        synced_lyrics:"",
-        title: "Butterfly Wings",
+        title: "Content?",
         album: "Concentration",
-        artist: "Machines of Loving Grace",
-        date: "1993"
-    },
-    {
-        src: "./media/music/Wulfband - Chaostanzen.mp3",
-        synced_lyrics:"",
-        title: "Chaostanzen",
-        album: "Wulfband",
-        artist: "Wulfband",
-        date: "2014"
-    },
-    {
-        src: "./media/music/Wulfband - Heiss Wie Die Holle.mp3",
-        synced_lyrics:"",
-        title: "Heiss Wie Die Holle",
-        album: "Heiss Wie Die Holle",
-        artist: "Wulfband",
-        date: "2023"
-    },
-    {
-        src: "./media/music/Nine Inch Nails - Wish.mp3",
-        synced_lyrics:"",
-        title: "Wish",
-        album: "Broken",
-        artist: "Nine Inch Nails",
-        date: "1992"
-    },
-    {
-        src: "./media/music/DM - Enjoy The Silence 2004.mp3",
-        synced_lyrics:"",
-        title: "Enjoy The Silence 2004",
-        album: "Remixes",
-        artist: "Depeche Mode",
-        date: "2004"
-    },
-    {
-        src: "./media/music/KMFDM - Bait & Switch.mp3",
-        synced_lyrics:"",
-        title: "Bait & Switch",
-        album: "BLITZ",
-        artist: "KMFDM",
-        date: "2009"
-    },
-    {
-        src: "./media/music/KMFDM - Ready To Blow.mp3",
-        synced_lyrics:"",
-        title: "Ready To Blow",
-        album: "Hau Ruck",
-        artist: "KMFDM",
-        date: "2005"
-    },
-    {
-        src: "./media/music/Imogen Heap - Daylight Robbery.mp3",
-        synced_lyrics:"",
-        title: "Daylight Robbery",
-        album: "Speak For Yourself",
-        artist: "Imogen Heap",
-        date: "2005"
-    },
-    {
-        src: "./media/music/Chemlab - Codeine, Glue, And You.mp3",
-        synced_lyrics:"",
-        title: "Codeine, Glue, And You",
-        album: "Burn Out At The Hydrogen Bar",
-        artist: "Chemlab",
-        date: "1993"
-    },
-    {
-        src: "./media/music/Kesha - Blow (Deconstructed).mp3",
-        synced_lyrics:"",
-        title: "Blow (Deconstructed)",
-        album: "Deconstructed - EP",
-        artist: "Kesha",
-        date: "2012"
+        artist: "Machines Of Loving Grace",
+        date: "1993-01-01"
     }
-
 ]
 
 class JMediaPlayer9WidgetAgent {
