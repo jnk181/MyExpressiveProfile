@@ -178,7 +178,7 @@ var notes=[
     },
     {
         title:"2026",
-        content:"Wow happy new year wow what a special day wowowowow. I literally played Half-Life 2 Raising The Bar redux for New Years Eve. Oh well. Wow. I'm just hollow overall. Idk people say I can't blame all on it, but my (undiagnosed) autism has sure got me places. New year resolutions are also bullshit.",
+        content:"Wow happy new year wow what a special day wowowowow. I literally played Half-Life 2 Raising The Bar redux for New Years Eve. Oh well. Wow. I'm just hollow overall. Idk people say I can't blame all on it, but my (undiagnosed) autism has sure got me places. New year resolutions are also bullshit. I don't have a good sleep schedule at all, I went to sleep at like... 3AM last night. I was archiving some old code into my journal idk.",
         thumbnail:"",
         short_description: "Wow",
         date:"2025-01-09",
