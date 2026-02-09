@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "jnk181",
-    status: "Just wasting it..."
+    status: "Stasis..."
 }
 
 var photo_albums=[
@@ -56,6 +56,11 @@ var photo_albums=[
                 src:"./media/photos/cats_micky.jpg",
                 caption:"Mikica",
                 date:"2024-12-13",
+            },
+            {
+                src:"./media/photos/cats_vicky.jpg",
+                caption:"Vikica",
+                date:"2025-01-08",
             }
         ]
     },
@@ -173,15 +178,8 @@ var notes=[
         title:"New site design",
         content:"<img width='200' src='./media/photos_other/nimbus_icons.webp'><br>I decided to come up with my own new design language based on Frutiger Aero aesthetics of Windows Vista and Erwann Chenede's Nimbus style called 'Nimbus Strata'.",
         thumbnail:"./media/photos_other/nimbus_icons.webp",
-        short_description: "I like coffee",
+        short_description: "",
         date:"2025-12-29",
-    },
-    {
-        title:"2026",
-        content:"Wow happy new year wow what a special day wowowowow. I literally played Half-Life 2 Raising The Bar redux for New Years Eve. Oh well. Wow. I'm just hollow overall. Idk people say I can't blame all on it, but my (undiagnosed) autism has sure got me places. New year resolutions are also bullshit. I don't have a good sleep schedule at all, I went to sleep at like... 3AM last night. I was archiving some old code into my journal idk.",
-        thumbnail:"",
-        short_description: "Wow",
-        date:"2025-01-09",
     }
 ]
 
