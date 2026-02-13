@@ -6,7 +6,15 @@ var music_list=[
         album: "Half-Life 2 OST",
         artist: "Kelly Bailey",
         date: "2004"
-    }
+    },
+    {
+        src: "./media/music/02 Taste of Blood_c.mp3",
+        synced_lyrics:"",
+        title: "Taste of Blood",
+        album: "Portal OST",
+        artist: "Kelly Bailey",
+        date: "2007"
+    },
 ]
 
 class JMediaPlayer9WidgetAgent {
