@@ -1,36 +1,12 @@
 var music_list=[
     {
-        src: "./media/music/11 - Content.mp3",
+        src: "./media/music/Valve - Probably Not a Problem.mp3",
         synced_lyrics:"",
-        title: "Content?",
-        album: "Concentration",
-        artist: "Machines Of Loving Grace",
-        date: "1993-01-01"
-    },
-    {
-        src: "./media/music/08 - Terminal City.mp3",
-        synced_lyrics:"",
-        title: "Terminal City",
-        album: "Machines Of Loving Grace",
-        artist: "Machines Of Loving Grace",
-        date: "1991-01-01"
-    },
-    {
-        src: "./media/music/Chemlab - Vera Blue (9669).mp3",
-        synced_lyrics:"",
-        title: "Vera Blue (96/69)",
-        album: "East Side Militia",
-        artist: "Chemlab",
-        date: "1999-01-01"
-    },
-    {
-        src: "./media/music/06 - Neurozone.mp3",
-        synced_lyrics:"",
-        title: "Neurozone",
-        album: "Burn Out At The Hydrogen Bar",
-        artist: "Chemlab",
-        date: "1993-01-01"
-    },
+        title: "Probably Not a Problem",
+        album: "Half-Life 2 OST",
+        artist: "Kelly Bailey",
+        date: "2004"
+    }
 ]
 
 class JMediaPlayer9WidgetAgent {
