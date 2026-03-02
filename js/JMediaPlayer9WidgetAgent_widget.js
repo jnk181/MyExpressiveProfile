@@ -1,5 +1,13 @@
 var music_list=[
     {
+        src: "./media/music/08 - Strut.mp3",
+        synced_lyrics:"",
+        title: "Strut",
+        album: "Blitz",
+        artist: "KMFDM",
+        date: "2009"
+    },
+    {
         src: "./media/music/Valve - Probably Not a Problem.mp3",
         synced_lyrics:"",
         title: "Probably Not a Problem",
@@ -14,7 +22,7 @@ var music_list=[
         album: "Portal OST",
         artist: "Kelly Bailey",
         date: "2007"
-    },
+    }
 ]
 
 class JMediaPlayer9WidgetAgent {
