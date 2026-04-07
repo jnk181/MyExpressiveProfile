@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "jnk181",
-    status: "Stasis..."
+    status: "d1_town.Start"
 }
 
 var photo_albums=[
