@@ -1,8 +1,8 @@
 var jmp9a;
 
 var config={
-    name: "jnk181",
-    status: "d1_town.Start"
+    name: "janko181",
+    status: "Enjoy and... Please be polite ☺️."
 }
 
 var photo_albums=[
