@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "janko181",
-    status: "Enjoy and... Please be polite ☺️."
+    status: "Enjoy and... FUCK ART LET'S KILL 💥"
 }
 
 var photo_albums=[
