@@ -32,14 +32,19 @@ var photo_albums=[
         icon:"./img/icons/games.png",
         photos:[
             {
-                src:"./media/photos_other/2025-12-25 17:09:47 - Garry's Mod (x64).webp",
-                caption:"Garry's Mod gm_shoretown",
-                date:"2025-12-25",
+                src:"./media/photos_other/2014-10-06 000000 - Team Fortress 2 - trade_tfplayground 008.webp",
+                caption:"2014-10-06: trade_tfplayground",
+                date:"2014-10-06",
             },
             {
-                src:"./media/photos_other/2025-12-23 20:12:33 - Hammer++.webp",
-                caption:"Hammering myself",
-                date:"2025-12-23",
+                src:"./media/photos_other/2020-07-22 172200 - gm_shoretown 006.webp",
+                caption:"2020-07-22: gm_shoretown",
+                date:"2020-07-22",
+            },
+            {
+                src:"./media/photos_other/2020-10-13 114553 0001.webp",
+                caption:"2020-10-13: Blender",
+                date:"2020-10-13",
             }
         ]
     },
@@ -49,12 +54,12 @@ var photo_albums=[
         photos:[
             {
                 src:"./media/photos/cats_tufny.jpg",
-                caption:"Tufnica",
+                caption:"Tufnica (missing)",
                 date:"2025-03-20",
             },
             {
                 src:"./media/photos/cats_micky.jpg",
-                caption:"Mikica rip 😿",
+                caption:"Mikica (rip 😿)",
                 date:"2024-12-13",
             },
             {
