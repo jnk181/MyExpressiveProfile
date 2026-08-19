@@ -210,7 +210,7 @@ p span.highlight {
     margin-bottom:0;
 }
 
-.profile-info img {
+.profile-info .inner-content img {
     max-height: 200px;
     border: 1px solid #4ea14e;
     box-sizing: border-box;
