@@ -11,17 +11,12 @@ var photo_albums=[
         icon:"./img/icons/pallette.png",
         photos:[
             {
-                src:"./media/photos_other/Screenshot from 2025-12-28 08-16-13.webp",
-                caption:"Zinwa Q25 launcher concept",
-                date:"2025-03-20",
-            },
-            {
-                src:"./media/photos_other/nimbusstrata.webp",
+                src:"./media/photos_other/2025-12-03 nimbusstrata.webp",
                 caption:"Linux Mint Nimbus Strata concept",
                 date:"2025-03-20",
             },
             {
-                src:"./media/photos_other/sew660ir_front_red.webp",
+                src:"./media/photos_other/2024-03 sew660ir_front_red.webp",
                 caption:"Sony Ericsson W660 QWERTY remaster concept",
                 date:"2025-03-20",
             }
@@ -33,17 +28,22 @@ var photo_albums=[
         photos:[
             {
                 src:"./media/photos_other/2014-10-06 000000 - Team Fortress 2 - trade_tfplayground 008.webp",
-                caption:"2014-10-06: trade_tfplayground",
+                caption:"trade_tfplayground",
+                date:"2014-10-06",
+            },
+            {
+                src:"./media/photos_other/2017-09-07 194930 - portal leipzig.jpg",
+                caption:"portal leipzig",
                 date:"2014-10-06",
             },
             {
                 src:"./media/photos_other/2020-07-22 172200 - gm_shoretown 006.webp",
-                caption:"2020-07-22: gm_shoretown",
+                caption:"gm_shoretown",
                 date:"2020-07-22",
             },
             {
                 src:"./media/photos_other/2020-10-13 114553 0001.webp",
-                caption:"2020-10-13: Blender",
+                caption:"Blender",
                 date:"2020-10-13",
             }
         ]
@@ -197,10 +197,11 @@ function previewNote(ind) {
         document.querySelector(`.overlay-black .note-preview .inner-content span.date`).innerHTML=notes[ind].date;
     }
 
-function previewImage(image) {
+function previewImage(image,titlebar_newtext="Photo viewer") {
     document.querySelector(`.overlay-black`).style.display="";
     document.querySelector(`.overlay-black .image-preview`).style.display="";
     document.querySelector(`.overlay-black .image-preview .inner-content img.main`).src=image;
+    document.querySelector(`.overlay-black .image-preview span.title`).innerHTML=titlebar_newtext //image.src.substring(image.src.lastIndexOf('/') + 1)
 }
 
 function showHiddenLinks() {
@@ -244,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
             photo_node.querySelector(`span.caption`).innerHTML=photo.caption;
             photo_node.classList.remove('template');
             photo_node.addEventListener('click', function() {
-                previewImage(photo.src)
+                previewImage(photo.src,photo.src.substring(photo.src.lastIndexOf('/') + 1))
             })
             new_node.querySelector(`.album-content`).appendChild(photo_node)
         })
