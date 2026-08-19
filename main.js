@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "janko181",
-    status: "Enjoy and... FUCK ART LET'S KILL 💥"
+    status: "rip micky 😿"
 }
 
 var photo_albums=[
@@ -54,7 +54,7 @@ var photo_albums=[
             },
             {
                 src:"./media/photos/cats_micky.jpg",
-                caption:"Mikica",
+                caption:"Mikica rip 😿",
                 date:"2024-12-13",
             },
             {
