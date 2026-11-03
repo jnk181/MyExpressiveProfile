@@ -1,389 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{ NAME }</title>
-        <link rel="stylesheet" href="style.css">
 
-        <link rel="preload" href="./img/widgets/mediaplayer/button_volume_down.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_pause_down.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_play_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/trackslider_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_next_disabled.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_volume_disabled.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/genericcover.jpg" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/playlisticon.jpg" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_stop_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/trackslider.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_volume.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_prev_disabled.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_next.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_play_disabled.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/seekbar_bk.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/controls_bk2.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_pause_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_stop.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_prev_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_pause.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/seekbar_bk3.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/header_bk.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_prev.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_volume_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_play.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/backgrounddefault.jpg" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_speed1.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_stop_down.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_next_down.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_play_down.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_prev_down.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/controls_bk.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_stop_disabled.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_next_hover.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/progress_bk.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_speed2.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/genericdisc.png" as="image">
-        <link rel="preload" href="./img/widgets/mediaplayer/button_pause_disabled.png" as="image">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ NAME }</title>
+    <link rel="stylesheet" href="style.css">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/icons_favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/icons_favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/icons_favicon/favicon-16x16.png">
-        <link rel="manifest" href="./img/icons_favicon/site.webmanifest">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_volume_down.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_pause_down.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_play_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/trackslider_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_next_disabled.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_volume_disabled.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/genericcover.jpg" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/playlisticon.jpg" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_stop_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/trackslider.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_volume.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_prev_disabled.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_next.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_play_disabled.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/seekbar_bk.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/controls_bk2.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_pause_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_stop.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_prev_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_pause.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/seekbar_bk3.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/header_bk.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_prev.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_volume_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_play.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/backgrounddefault.jpg" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_speed1.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_stop_down.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_next_down.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_play_down.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_prev_down.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/controls_bk.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_stop_disabled.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_next_hover.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/progress_bk.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_speed2.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/genericdisc.png" as="image">
+    <link rel="preload" href="./img/widgets/mediaplayer/button_pause_disabled.png" as="image">
 
-        <script src="js/JMediaPlayer9WidgetAgent_widget.js"></script>
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <div class="overlay-black" style="display:none;">
-            <div class="preview-widget note-preview" style="display:none;">
-                <div class="header">
-                    <img src="./img/icons/notes.png">
-                    <span class="title">Title</span>
-                    <button class="close-button" onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .note-preview`).style.display='none'"></button>
-                </div>
-                <div class="inner-content">
-                    <span class="date">0000-00-00</span>
-                    <h1 class="title">Test</h1>
-                    <div class="markdown-content">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons_favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/icons_favicon/site.webmanifest">
 
-                    </div>
-                </div>
+    <script src="js/JMediaPlayer9WidgetAgent_widget.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="overlay-black" style="display:none;">
+        <div class="preview-widget note-preview" style="display:none;">
+            <div class="header">
+                <img src="./img/icons/notes.png">
+                <span class="title">Title</span>
+                <button class="close-button"
+                    onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .note-preview`).style.display='none'"></button>
             </div>
+            <div class="inner-content">
+                <span class="date">0000-00-00</span>
+                <h1 class="title">Test</h1>
+                <div class="markdown-content">
 
-            <div class="preview-widget image-preview" style="display:none;">
-                <div class="header">
-                    <img src="./img/icons/photos.png">
-                    <span class="title">Photo viewer</span>
-                    <button class="close-button" onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .image-preview`).style.display='none'"></button>
-                </div>
-                <div class="inner-content">
-                    <img class="main" src="./img/genericimage.jpg">
                 </div>
             </div>
         </div>
-        <div class="main-widget profile-header">
-            
-            <div class="avatar-cont">
-                <img class="avatar-overlay" src="./img/avatar_overlays/smoke.gif" style="opacity:0.7; display:none;">
-                <img class="avatar-main" src="https://avatars.githubusercontent.com/u/197515092">
+
+        <div class="preview-widget image-preview" style="display:none;">
+            <div class="header">
+                <img src="./img/icons/photos.png">
+                <span class="title">Photo viewer</span>
+                <button class="close-button"
+                    onclick="document.querySelector(`.overlay-black`).style.display='none'; document.querySelector(`.overlay-black .image-preview`).style.display='none'"></button>
             </div>
-            <div class="text-area">
-                <span class="profilename">{ NAME }</span><br>
-                <span class="profilestatus">{ STATUS }</span>
+            <div class="inner-content">
+                <img class="main" src="./img/genericimage.jpg">
             </div>
         </div>
-        <div class="main-widget profile-tabber">
-            <button disabled class="tabber" data-tabname="tab-home">
-                <div><img src="./img/icons/home.png"><span>Home</span></div>
-            </button>
-            <button class="tabber" data-tabname="tab-photos">
-                <div><img src="./img/icons/photos.png"><span>Photos</span></div>
-            </button>
-            <button class="tabber" data-tabname="tab-friends" style="display:none;">
-                <div><img src="./img/icons/friends.png"><span>Friends</span></div>
-            </button>
-            <button class="tabber" data-tabname="tab-notes">
-                <div><img src="./img/icons/notes.png"><span>Notes</span></div>
-            </button>
-            <button class="tabber" data-tabname="tab-musicplayer">
-                <div><img src="./img/icons/musicplayer.png"><span>Music Player</span></div>
-            </button>
+    </div>
+    <div class="main-widget profile-header">
+
+        <div class="avatar-cont">
+            <img class="avatar-overlay" src="./img/avatar_overlays/smoke.gif" style="opacity:0.7; display:none;">
+            <img class="avatar-main" src="https://avatars.githubusercontent.com/u/197515092">
+        </div>
+        <div class="text-area">
+            <span class="profilename">{ NAME }</span><br>
+            <span class="profilestatus">{ STATUS }</span>
+        </div>
+    </div>
+    <div class="main-widget profile-tabber">
+        <button disabled class="tabber" data-tabname="tab-home">
+            <div><img src="./img/icons/home.png"><span>Home</span></div>
+        </button>
+        <button class="tabber" data-tabname="tab-photos">
+            <div><img src="./img/icons/photos.png"><span>Photos</span></div>
+        </button>
+        <button class="tabber" data-tabname="tab-friends" style="display:none;">
+            <div><img src="./img/icons/friends.png"><span>Friends</span></div>
+        </button>
+        <button class="tabber" data-tabname="tab-notes">
+            <div><img src="./img/icons/notes.png"><span>Notes</span></div>
+        </button>
+        <button class="tabber" data-tabname="tab-musicplayer">
+            <div><img src="./img/icons/musicplayer.png"><span>Music Player</span></div>
+        </button>
+    </div>
+
+    <div class="tab-container tab-home">
+
+        <div class="main-widget with-header profile-info">
+            <div class="header">
+                <img src="./img/icons/info.png">
+                <span>About me</span>
+            </div>
+            <div class="inner-content">
+                <div style="text-align: center;">
+                    <img src="./media/art/gspbeograd_pixelart2018/BusPrivatnik.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/Fav_BusIzdrndan.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/Fav_BusSolaris2.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/Fav_ElectroBus.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/Fav_MiniBus.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/Fav_Trolleybus3.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/IconBGVOZSpray.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/TrolejbusZglobni.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/V_tram_caf.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/V_tram_duewag2.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/V_tram_duewag_zuti.png ">
+                    <img src="./media/art/gspbeograd_pixelart2018/V_tram_tatra.png">
+                </div>
+                <p style="text-align: center; font-style:italic">destination unknown</p>
+            </div>
         </div>
 
-        <div class="tab-container tab-home">
-
-            <div class="main-widget with-header profile-info">
-                <div class="header">
-                    <img src="./img/icons/info.png">
-                    <span>About me</span>
-                </div>
-                <div class="inner-content">
-                    <img onclick="previewImage(this.src)" src="./media/photos/20260801_mickyandvicky.jpg">
-                    <p>Micky has passed away on 2026-08-12 (approximate date) from being hit by a car by some stupid idiot stranger. Image is from 2026-08-01.</p>
-                </div>
+        <div class="main-widget with-header profile-links">
+            <div class="header" onclick="showHiddenLinks();">
+                <img src="./img/icons/links.png">
+                <span>Links</span>
             </div>
-
-            <div class="main-widget with-header profile-links">
-                <div class="header" onclick="showHiddenLinks();">
-                    <img src="./img/icons/links.png">
-                    <span>Links</span>
-                </div>
-                <div class="inner-content">
-                    <div class="link-cont">
-                        <a href="https://www.last.fm/user/jnk181">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/lastfm.png">
-                            </div>
-                            
-                            <span class="title">LastFM</span>
-                            <span class="title-sub">jnk181</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://www.deviantart.com/jankeza121">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/deviantart.png">
-                            </div>
-                            
-                            <span class="title">DeviantART</span>
-                            <span class="title-sub">jankeza121</span>
-                        </a>
-                    </div>
-                    <div class="link-cont nts-hide">
-                        <a href="https://www.discord.com/users/ynndhor">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/discord.png">
-                            </div>
-                            
-                            <span class="title">Discord</span>
-                            <span class="title-sub">ynndhor</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://github.com/jnk181">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/github.png">
-                            </div>
-                            
-                            <span class="title">GitHub</span>
-                            <span class="title-sub">jnk181</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://open.spotify.com/user/qlmaiboat4hyst4k6o07uojy0">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/spotify.png">
-                            </div>
-                            
-                            <span class="title">Spotify</span>
-                            <span class="title-sub">jko181</span>
-                        </a>
-                    </div>
-                    <div class="link-cont nts-hide">
-                        <a href="https://www.twitter.com/jnkz121">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/twitter.png">
-                            </div>
-                            
-                            <span class="title">Twitter</span>
-                            <span class="title-sub">jnkz121</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://sketchfab.com/archived6216">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/sketchfab.png">
-                            </div>
-                            
-                            <span class="title">Sketchfab</span>
-                            <span class="title-sub">archived6216</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://www.reddit.com/user/Lil-Shaleesh2/">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/reddit2.png">
-                            </div>
-                            
-                            <span class="title">Reddit</span>
-                            <span class="title-sub">Lil-Shal-</span>
-                        </a>
-                    </div>
-                    <div class="link-cont nts-hide">
-                        <a href="https://steamcommunity.com/profiles/76561198867461692/">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/steam.png">
-                            </div>
-                            
-                            <span class="title">Steam</span>
-                            <span class="title-sub">jnn</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://www.twitch.tv/jnk181">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/twitch.png">
-                            </div>
-                            
-                            <span class="title">Twitch</span>
-                            <span class="title-sub">jnk181</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://www.youtube.com/@janko181a">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/youtube.webp">
-                            </div>
-                            
-                            <span class="title">YouTube</span>
-                            <span class="title-sub">janko181</span>
-                        </a>
-                    </div>
-                    <div class="link-cont">
-                        <a href="https://gamebanana.com/members/4438465">
-                            <div class="icon-cont">
-                                <img class="shortcut-arrow" src="./img/icons/shortcut.png">
-                                <img class="icon" src="./img/logos/gamebanana.webp">
-                            </div>
-                            
-                            <span class="title">GameBanana</span>
-                            <span class="title-sub">janko181</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-widget footer">
-                <span>Website designed by (C) Janko</span>
-            </div>
-
-        </div>
-
-        <div class="tab-container tab-photos" style="display:none;">
-            <div class="main-widget with-header profile-photos">
-                <div class="header">
-                    <img src="./img/icons/photos.png">
-                    <span>Photos</span>
-                </div>
-                <div class="inner-content">
-                    <div class="photos-album template">
-                        <div class="header">
-                            <img class="icon" src="./img/icons/mypictures.png">
-                            <span class="title">Album</span>
+            <div class="inner-content">
+                <div class="link-cont">
+                    <a href="https://www.last.fm/user/jnk181">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/lastfm.png">
                         </div>
-                        <div class="album-content">
-                            <div class="photo template">
-                                <div class="photo-main-cont"><img class="photo-main" src="./img/genericimage.jpg"></div>
-                                <br>
-                                <span class="caption">Caption</span>
-                            </div>
+
+                        <span class="title">LastFM</span>
+                        <span class="title-sub">jnk181</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://www.deviantart.com/jankeza121">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/deviantart.png">
+                        </div>
+
+                        <span class="title">DeviantART</span>
+                        <span class="title-sub">jankeza121</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://www.discord.com/users/ynndhor">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/discord.png">
+                        </div>
+
+                        <span class="title">Discord</span>
+                        <span class="title-sub">ynndhor</span>
+                    </a>
+                </div>
+                <div class="link-cont">
+                    <a href="https://github.com/jnk181">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/github.png">
+                        </div>
+
+                        <span class="title">GitHub</span>
+                        <span class="title-sub">jnk181</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://open.spotify.com/user/qlmaiboat4hyst4k6o07uojy0">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/spotify.png">
+                        </div>
+
+                        <span class="title">Spotify</span>
+                        <span class="title-sub">jko181</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://www.twitter.com/jnkz121">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/twitter.png">
+                        </div>
+
+                        <span class="title">Twitter</span>
+                        <span class="title-sub">jnkz121</span>
+                    </a>
+                </div>
+                <div class="link-cont">
+                    <a href="https://sketchfab.com/archived6216">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/sketchfab.png">
+                        </div>
+
+                        <span class="title">Sketchfab</span>
+                        <span class="title-sub">archived6216</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://www.reddit.com/user/Lil-Shaleesh2/">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/reddit2.png">
+                        </div>
+
+                        <span class="title">Reddit</span>
+                        <span class="title-sub">Lil-Shal-</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://steamcommunity.com/profiles/76561198867461692/">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/steam.png">
+                        </div>
+
+                        <span class="title">Steam</span>
+                        <span class="title-sub">jnn</span>
+                    </a>
+                </div>
+                <div class="link-cont nts-hide">
+                    <a href="https://www.twitch.tv/jnk181">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/twitch.png">
+                        </div>
+
+                        <span class="title">Twitch</span>
+                        <span class="title-sub">jnk181</span>
+                    </a>
+                </div>
+                <div class="link-cont">
+                    <a href="https://www.youtube.com/@janko181a">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/youtube.webp">
+                        </div>
+
+                        <span class="title">YouTube</span>
+                        <span class="title-sub">janko181</span>
+                    </a>
+                </div>
+                <div class="link-cont">
+                    <a href="https://gamebanana.com/members/4438465">
+                        <div class="icon-cont">
+                            <img class="shortcut-arrow" src="./img/icons/shortcut.png">
+                            <img class="icon" src="./img/logos/gamebanana.webp">
+                        </div>
+
+                        <span class="title">GameBanana</span>
+                        <span class="title-sub">janko181</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-widget footer">
+            <span>Website designed by (C) Janko</span>
+        </div>
+
+    </div>
+
+    <div class="tab-container tab-photos" style="display:none;">
+        <div class="main-widget with-header profile-photos">
+            <div class="header">
+                <img src="./img/icons/photos.png">
+                <span>Photos</span>
+            </div>
+            <div class="inner-content">
+                <div class="photos-album template">
+                    <div class="header">
+                        <img class="icon" src="./img/icons/mypictures.png">
+                        <span class="title">Album</span>
+                    </div>
+                    <div class="album-content">
+                        <div class="photo template">
+                            <div class="photo-main-cont"><img class="photo-main" src="./img/genericimage.jpg"></div>
+                            <br>
+                            <span class="caption">Caption</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="tab-container tab-friends" style="display:none;"></div>
-        <div class="tab-container tab-notes" style="display:none;">
-            <div class="main-widget with-header profile-notes">
-                <div class="header">
-                    <img src="./img/icons/notes.png">
-                    <span class="title">Notes</span>
-                </div>
-                <div class="inner-content">
-                    <div class="note-item template">
-                        <h1 class="title">Title</h1>
-                        <img class="thumb" style="display:none;" src="./img/genericimage.jpg">
-                        <p class="short-description" style="display:none;">Test</p>
-                        <div class="date-header"><span>2025-10-03</span></div>
-                    </div>
+    </div>
+    <div class="tab-container tab-friends" style="display:none;"></div>
+    <div class="tab-container tab-notes" style="display:none;">
+        <div class="main-widget with-header profile-notes">
+            <div class="header">
+                <img src="./img/icons/notes.png">
+                <span class="title">Notes</span>
+            </div>
+            <div class="inner-content">
+                <div class="note-item template">
+                    <h1 class="title">Title</h1>
+                    <img class="thumb" style="display:none;" src="./img/genericimage.jpg">
+                    <p class="short-description" style="display:none;">Test</p>
+                    <div class="date-header"><span>2025-10-03</span></div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="tab-container tab-musicplayer" style="display:none;">
-            <div class="main-widget with-header music-player" id="mediaplayerwidget" data-playstate="paused">
-                <audio id="mediaplayerwidget_controller"></audio>
-                <div class="header">
-                    <img src="./img/icons/musicplayer.png">
-                    <span>Music Player</span>
-                </div>
-                <div class="inner-content">
-                    <div class="music-player-main">
-                        <div class="nowplaying-info">
-                            <div class="song-info">
-                                <img class="cover" src="./img/widgets/mediaplayer/genericcover.jpg">
-                                <div class="disc-cont">
-                                    <img class="disc" src="./img/widgets/mediaplayer/genericdisc.png"
+    <div class="tab-container tab-musicplayer" style="display:none;">
+        <div class="main-widget with-header music-player" id="mediaplayerwidget" data-playstate="paused">
+            <audio id="mediaplayerwidget_controller"></audio>
+            <div class="header">
+                <img src="./img/icons/musicplayer.png">
+                <span>Music Player</span>
+            </div>
+            <div class="inner-content">
+                <div class="music-player-main">
+                    <div class="nowplaying-info">
+                        <div class="song-info">
+                            <img class="cover" src="./img/widgets/mediaplayer/genericcover.jpg">
+                            <div class="disc-cont">
+                                <img class="disc" src="./img/widgets/mediaplayer/genericdisc.png"
                                     onerror="this.src='./img/widgets/mediaplayer/genericdisc.png'">
-                                </div>
-                                
-                                <div class="text">
-                                    <span class="title">Title</span><br>
-                                    <span class="album">Album</span><br>
-                                    <span class="artist">Artist</span><br>
-                                    <span class="date">Date</span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="playlist-view">
-                            <div class="playlist-header">
-                                <span>Playlist view</span>
-                            </div>
-                            <div class="playlist-name">
-                                <img src="./img/widgets/mediaplayer/playlisticon.jpg">
-                                <span>My playlist</span>
-                            </div>
-                            <div class="playlist-list">
-                                <div class="list-item template">
-                                    <img class="icon" src="./img/icons/musicnote.png">
-                                    <span>Song 1</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="seekbar-cont">
-                        <div class="seekbar-mid">
-                            <div class="progress">
 
+                            <div class="text">
+                                <span class="title">Title</span><br>
+                                <span class="album">Album</span><br>
+                                <span class="artist">Artist</span><br>
+                                <span class="date">Date</span>
                             </div>
-                            <div class="trackslider-cont">
-                                <button class="button-trackslider">
-                                    
-                                </button>
-                            </div>
-                            
                         </div>
                     </div>
-                    <div class="controls-cont">
-                        <button class="button-play">
-                            <img src="./img/widgets/mediaplayer/button_play.png">
-                        </button>
-                        <button class="button-stop" disabled>
-                            <img src="./img/widgets/mediaplayer/button_stop.png">
-                        </button>
-                        <button class="button-prev" disabled>
-                            <img src="./img/widgets/mediaplayer/button_prev.png">
-                        </button>
-                        <button class="button-next" disabled>
-                            <img src="./img/widgets/mediaplayer/button_next.png">
-                        </button>
-                        <button class="button-volume">
-                            <img src="./img/widgets/mediaplayer/button_volume.png">
-                        </button>
+                    <div class="playlist-view">
+                        <div class="playlist-header">
+                            <span>Playlist view</span>
+                        </div>
+                        <div class="playlist-name">
+                            <img src="./img/widgets/mediaplayer/playlisticon.jpg">
+                            <span>My playlist</span>
+                        </div>
+                        <div class="playlist-list">
+                            <div class="list-item template">
+                                <img class="icon" src="./img/icons/musicnote.png">
+                                <span>Song 1</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="seekbar-cont">
+                    <div class="seekbar-mid">
+                        <div class="progress">
+
+                        </div>
+                        <div class="trackslider-cont">
+                            <button class="button-trackslider">
+
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="controls-cont">
+                    <button class="button-play">
+                        <img src="./img/widgets/mediaplayer/button_play.png">
+                    </button>
+                    <button class="button-stop" disabled>
+                        <img src="./img/widgets/mediaplayer/button_stop.png">
+                    </button>
+                    <button class="button-prev" disabled>
+                        <img src="./img/widgets/mediaplayer/button_prev.png">
+                    </button>
+                    <button class="button-next" disabled>
+                        <img src="./img/widgets/mediaplayer/button_next.png">
+                    </button>
+                    <button class="button-volume">
+                        <img src="./img/widgets/mediaplayer/button_volume.png">
+                    </button>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

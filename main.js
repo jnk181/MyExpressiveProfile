@@ -2,7 +2,7 @@ var jmp9a;
 
 var config={
     name: "janko181",
-    status: "rip micky 😿"
+    status: "destination unknown"
 }
 
 var photo_albums=[
